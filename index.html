@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN DE BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FIN CDN DE BOOTSTRAP-->
+    <title>Mercado</title>
+
+    <!-- CDN DE FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3bde51311f.js" crossorigin="anonymous"></script>
+    <!-- FIN CDN DE FONT AWESOME -->
+
+    <link rel="stylesheet" href="style/carousel.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="render()">
+    
+
+    <!-- INICIO DE CABECERA -->
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success text-white">
+
+            <!-- Navegacion con Logo y Nombre -->
+            <a class="text-white navbar-brand" href="#">
+                <i class="fab fa-pagelines"></i> VeggyFresh
+            </a>
+            <!-- FIN Navegacion con Logo y Nombre -->
+
+            <!-- MENU TAB BAR MODO TABLET -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- FIN MENU TAB BAR MODO TABLET -->
+
+            <!-- Navegacion Por Pagina -->
+            <div class="figuritas collpase navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <!-- INICIO DE LISTA DE NAVEGACION -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#fruta"> Frutas </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#verduras"> Verduras </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#abarrotes"> Abarrotes </a>
+                    </li>
+                    <!-- FIN INICIO DE LISTA DE NAVEGACION -->
+                </ul>
+
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <!-- ICONO Y ETIQUETA CARRITO -->
+                    <a class="text-white nav-link" href="cart.html">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        Carrito
+                        <i style="color:yellow;" id="cart_n"></i>
+                    </a>
+                    <!-- FIN ICONO Y ETIQUETA CARRITO -->
+
+                    <!-- ICONO Y ETIQUETA ADMINISTRADOR -->
+                    <a class="nav-link disable text-white" href="admin/login.html">
+                        <i class="far fa-user"> Administrador</i>
+                    </a>
+                    <!-- FIN ICONO Y ETIQUETA ADMINISTRADOR -->
+                </form>
+                <!-- FIN ICONO Y ETIQUETA CARRITO -->
+
+            </div>
+            <!-- FIN Navegacion Por Pagina -->
+
+        </nav>
+
+    </header>
+    <!-- FIN DE CABECERA -->
+
+    <!-- INICIO DE CUERPO DE LA PAGINA -->
+    <main role="main">
+        <!-- INICIO DE CARRUSEL -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <!-- Slide 1-->
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+                <!-- Slide 2-->
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="1"></li>
+
+                <!-- Slide 3-->
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="2" </li> </ol> <!-- FOTOGRAFIAS PARA
+                    EL SLIDE -->
+                    <div class="carousel-inner">
+
+                        <!-- PRIMER SLIDE DEL CARRUSEL -->
+                        <div class="carousel-item active">
+                            <!-- IMAGEN CARROUSEL 1-->
+                            <img class="imgFilter first-slide d-block w-100" src="img/carrusel/Plaza.jpg"
+                                alt="First Slide">
+                            <!-- FIN IMAGEN CARROUSEL 1-->
+
+                            <!-- INICIO HEAD - BODY - LINK DE CARRUSEL -->
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h1> Tienda Organica</h1>
+                                    <p> Verduras Frescas </p>
+                                    <p> <a role="button" class="btn btn-lg btn-primary" href="#"> Prodcutos</a> </p>
+                                </div>
+                            </div>
+                            <!-- FIN HEAD - BODY - LINK DE CARRUSEL -->
+
+                        </div>
+                        <!-- PRIMERA SLIDE DEL CARRUSEL -->
+
+                        <!-- SEGUNDO SLIDE DEL CARRUSEL -->
+                        <div class="carousel-item">
+                            <!-- IMAGEN CARROUSEL 1-->
+                            <img class="imgFilter second-slide d-block w-100" src="img/carrusel/mercado.jpg"
+                                alt="Second Slide">
+                            <!-- FIN IMAGEN CARROUSEL 1-->
+
+                            <!-- INICIO HEAD - BODY - LINK DE CARRUSEL -->
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h1> Tienda Organica</h1>
+                                    <p> Verduras Frescas </p>
+                                    <p> <a role="button" class="btn btn-lg btn-primary" href="#"> Prodcutos </a> </p>
+                                </div>
+                            </div>
+                            <!-- FIN HEAD - BODY - LINK DE CARRUSEL -->
+
+                        </div>
+                        <!-- SEGUNDO SLIDE DEL CARRUSEL -->
+
+                        <!-- TERCER SLIDE DEL CARRUSEL -->
+                        <div class="carousel-item">
+                            <!-- IMAGEN CARROUSEL 1-->
+                            <img class="imgFilter third-slide d-block w-100" src="img/carrusel/mercado-verduras.jpg"
+                                alt="Third Slide">
+                            <!-- FIN IMAGEN CARROUSEL 1-->
+
+                            <!-- INICIO HEAD - BODY - LINK DE CARRUSEL -->
+                            <div class="container">
+                                <div class="carousel-caption text-right">
+                                    <h1> Tienda Organica</h1>
+                                    <p> Verduras Frescas </p>
+                                    <p> <a role="button" class="btn btn-lg btn-primary" href="#"> Prodcutos </a> </p>
+                                </div>
+                            </div>
+                            <!-- FIN HEAD - BODY - LINK DE CARRUSEL -->
+
+                        </div>
+                        <!-- TERCER SLIDE DEL CARRUSEL -->
+
+                    </div>
+                    <!-- FIN FOTOGRAFIAS PARA EL SLIDE -->
+
+                    <!-- SCROLL VERTICAL DEL SLIDE -->
+
+                    <!-- SCROLL ATRAS -->
+                    <a style="z-index:101;" class="carousel-control-prev" href="#myCarousel" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previus</span>
+                    </a>
+
+                    <!-- SCROLL AVANZAR -->
+                    <a style="z-index:101;" class="carousel-control-next" href="#myCarousel" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!-- FIN SCROLL VERTICAL DEL SLIDE -->
+
+        </div>
+        <!-- FIN DE CARRUSEL -->
+
+        <!-- SECCIONES PARA CADA PAGINA -->
+        <div class="container marketing"><br>
+
+            <h2 id="fruta"> Frutas </h2>
+            <hr>
+            <div class="row" id="frutasDIV"></div>
+
+            <h2 id="verduras"> Verduras </h2>
+            <hr>
+            <div class="row" id="verdurasDIV"></div>
+
+            <h2 id="abarrotes"> Abarrotes </h2>
+            <hr>
+            <div class="row" id="abarrotesDIV"></div>
+            <hr class="featurette-divider">
+
+        </div>
+        <!-- FIN SECCIONES PARA CADA PAGINA -->
+
+        <!-- INICIO DEL FOOTER -->
+        <footer class="container">
+            <p class="float-right">
+                <a href="#"> HOME</a>
+            </p>
+            <div class="row">
+                VEGGY FRESH! A LA PUERTA DE TU HOGAR
+            </div>
+        </footer>
+        <!-- FIN DEL FOOTER -->
+    </main>
+    <!-- FIN DE CUERPO DE LA PAGINA -->
+
+
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- FIN JS DE BOOTSTRAP -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+    <!-- MAIN DEL FIREBASE -->
+    <script src="./javascript/main.js"></script>
+
+    <script defer src="./javascript/init-firebase.js"></script>
+
+    <!-- CDN SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.1/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

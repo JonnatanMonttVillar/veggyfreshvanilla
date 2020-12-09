@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN DE BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FIN CDN DE BOOTSTRAP-->
+    <title>Mercado</title>
+
+    <!-- CDN DE FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3bde51311f.js" crossorigin="anonymous"></script>
+    <!-- FIN CDN DE FONT AWESOME -->
+
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+
+<body onload="render()">
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md bg-success text-white">
+            <!-- Navegacion con Logo y Nombre -->
+            <a class="text-white navbar-brand" href="#">
+                <i class="fab fa-pagelines"></i> VeggyFresh
+            </a>
+            <!-- FIN Navegacion con Logo y Nombre -->
+
+            <!-- MENU TAB BAR MODO TABLET -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- FIN MENU TAB BAR MODO TABLET -->
+
+            <!-- Navegacion Por Pagina -->
+            <div class="figuritas collpase navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <!-- INICIO DE LISTA DE NAVEGACION -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </li>
+                    <!-- FIN INICIO DE LISTA DE NAVEGACION -->
+                </ul>
+
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <!-- ICONO Y ETIQUETA CARRITO -->
+                    <a class="text-white nav-link" href="#">
+                        <i class="text-warning fas fa-shopping-cart"></i>
+                        Carrito
+                        <i style="color:yellow;" id="cart_n"></i>
+                    </a>
+                    <!-- FIN ICONO Y ETIQUETA CARRITO -->
+
+                    <!-- ICONO Y ETIQUETA ADMINISTRADOR -->
+                    <a class="nav-link disable text-white" href="admin/login.html">
+                        <i class="far fa-user"> Administrador</i>
+                    </a>
+                    <!-- FIN ICONO Y ETIQUETA ADMINISTRADOR -->
+                </form>
+                <!-- FIN ICONO Y ETIQUETA CARRITO -->
+
+            </div>
+            <!-- FIN Navegacion Por Pagina -->
+        </nav>
+
+    </header>
+
+    <div class="container mt-3">
+        <main role="main">
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive-sm">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        #</th>
+                                    <th scope="col">
+                                        Producto</th>
+                                    <th scope="col">
+                                        Descripcion</th>
+                                    <th scope="col">
+                                        Cantidad</th>
+                                    <th scope="col">
+                                        Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </main>
+    </div>
+
+    <!-- INICIO DEL FOOTER -->
+    <footer class="container">
+        <p class="float-right">
+            <a href="#"> HOME</a>
+        </p>
+        <div class="row">
+            VEGGY FRESH! A LA PUERTA DE TU HOGAR
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- FIN JS DE BOOTSTRAP -->
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+    <script defer src="./javascript/init-firebase.js"></script>
+
+    
+    <!-- MAIN DEL FIREBASE -->
+    <script src="./javascript/cart.js"></script>
+
+    <!-- CDN SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.1/dist/sweetalert2.all.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.imgFilter{
+    filter: brightness(0.50);
+}
+
+.card-img-top{
+   height: 16rem;
+}
+
+img{
+    display:block;
+    margin:auto;
+}
+
+/*body
+{   background-image: url('verduras.jpg');
+    background-blend-mode: overlay;
+    background-color: rgb(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
